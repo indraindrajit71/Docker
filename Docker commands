@@ -1,0 +1,15 @@
+docker pull ubuntu    ----->> this will pull the ubuntu image from hub.docker.com
+
+docker image ls       ------>> this will show the images downloaded in your instance
+
+if we have to download any specific version of image:
+
+docker pull ubuntu:2.39 --- >> but we need to know the version of containers available at hub.docker.com
+
+
+docker search ubuntu   --- >> used to search the image
+
+docker run -d --name <container-name> <image-name>:version   --- >> -d is detached mode (wont give login prompt)
+
+docker ps -a                                       ---- >> this will show all containers in stop or started state
+
