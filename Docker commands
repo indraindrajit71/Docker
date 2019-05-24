@@ -13,3 +13,10 @@ docker run -d --name <container-name> <image-name>:version   --- >> -d is detach
 
 docker ps -a                                       ---- >> this will show all containers in stop or started state
 
+
+docker start <container-id>                         --- >> start a container thats exited
+
+docker ps -f "status=exited"                        --- >> list exited containers
+
+docker run -d -p 8080:80 --name httpd2 httpd:latest   --- >> 808 is host port and 80 is container port
+
