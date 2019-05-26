@@ -3,16 +3,21 @@ Chef server runs on the master machine and Chef client runs as an agent on each 
 Also, there is an extra component called workstation, which contains all the configurations which 
 are tested and then pushed to central chef server. 
 Therefore, it is not that easy.
+Here Client pulls the configurations from the Server.Making configurations are not that easy as you have to understand RUBU DSL 
+for managing your codes.
 
 
 Puppet – Puppet also has a master-agent architecture.
 Puppet server runs on the master machine and Puppet clients runs as an agent on each client machine. 
 After that, there is also a certificate signing between the agent and the master. Therefore, it is also not that easy.
+Here configurations are not that easy as well as its written in puppet DSL (Domain Specific Language).
 
 
 Ansible – It has only master running on the server machine, but no agents running on the client machine.
 It uses ssh connection to login to client systems or the nodes you want to configure. 
 Client machine VM requires no special setup, hence it is faster to setup!
+Easy to learn to manage the configurations as it uses YAML i.e. Yet Another Markup Language
+Server pushes configurations to all the nodes. Good for real-time application and there is immediate remote execution.
 
 Saltstack – Here Server is called as salt master and clients are called as 
 salt minions which run as agents in the client machine.
