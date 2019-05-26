@@ -1,0 +1,18 @@
+Chef – Chef has a master-agent architecture. 
+Chef server runs on the master machine and Chef client runs as an agent on each client machine. 
+Also, there is an extra component called workstation, which contains all the configurations which 
+are tested and then pushed to central chef server. 
+Therefore, it is not that easy.
+
+
+Puppet – Puppet also has a master-agent architecture.
+Puppet server runs on the master machine and Puppet clients runs as an agent on each client machine. 
+After that, there is also a certificate signing between the agent and the master. Therefore, it is also not that easy.
+
+
+Ansible – It has only master running on the server machine, but no agents running on the client machine.
+It uses ssh connection to login to client systems or the nodes you want to configure. 
+Client machine VM requires no special setup, hence it is faster to setup!
+
+Saltstack – Here Server is called as salt master and clients are called as 
+salt minions which run as agents in the client machine.
