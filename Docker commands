@@ -19,6 +19,8 @@ docker system events                                ----- >> will capture all th
 
 docker logs <container-id>                          ----- >> will print the logs of container
 
+docker exec <container-id> uptime                   ----- >> run command remotely on a container from docker host
+
 
 docker start <container-id>                         --- >> start a container thats exited
 
