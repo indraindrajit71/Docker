@@ -25,3 +25,13 @@ we can try to exit out of this and this should not terminate the container.
 
 docker cp <filenameorfoldername> <nameofcontainer>:/opt   --- >> copy snay file to container absolute path
 
+docker diff <nameofcontainer>       --- >> this will show the changes we did after the container was spawnned
+
+docker container commit <nameofcontainer> <id-of-dockerhubrepo>:tag     --- >> this will create an image locally on the docker host
+
+docker image history <id-of-image>    --- >> this will show the layers of image of the container
+
+docker login                          --- >> this willhelp in loggin in to the docker hub so that images can be pushed
+
+docker image push <image-name>:tag        ---- >> this will push the image to docker hub repository
+
