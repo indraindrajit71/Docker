@@ -20,3 +20,8 @@ docker ps -f "status=exited"                        --- >> list exited container
 
 docker run -d -p 8080:80 --name httpd2 httpd:latest   --- >> 8080 is host port and 80 is container port
 
+docker exec -it <nameofcontainer> bash                ---- >> this will connect to a running container
+we can try to exit out of this and this should not terminate the container.
+
+docker cp <filenameorfoldername> <nameofcontainer>:/opt   --- >> copy snay file to container absolute path
+
