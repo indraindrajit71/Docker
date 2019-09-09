@@ -21,6 +21,8 @@ docker logs <container-id>                          ----- >> will print the logs
 
 docker exec <container-id> uptime                   ----- >> run command remotely on a container from docker host
 
+docker inspect <container-id>                       ----- >> fetch details about a container
+
 
 docker start <container-id>                         --- >> start a container thats exited
 
