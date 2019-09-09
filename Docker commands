@@ -18,5 +18,5 @@ docker start <container-id>                         --- >> start a container tha
 
 docker ps -f "status=exited"                        --- >> list exited containers
 
-docker run -d -p 8080:80 --name httpd2 httpd:latest   --- >> 808 is host port and 80 is container port
+docker run -d -p 8080:80 --name httpd2 httpd:latest   --- >> 8080 is host port and 80 is container port
 
