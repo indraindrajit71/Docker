@@ -13,6 +13,8 @@ docker run -d --name <container-name> <image-name>:version   --- >> -d is detach
 
 docker ps -a                                       ---- >> this will show all containers in stop or started state
 
+docker rename <oldname> <newname>                   ---- >> rename a container
+
 
 docker start <container-id>                         --- >> start a container thats exited
 
