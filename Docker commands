@@ -15,6 +15,10 @@ docker ps -a                                       ---- >> this will show all co
 
 docker rename <oldname> <newname>                   ---- >> rename a container
 
+docker system events                                ----- >> will capture all the events
+
+docker logs <container-id>                          ----- >> will print the logs of container
+
 
 docker start <container-id>                         --- >> start a container thats exited
 
