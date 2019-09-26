@@ -45,3 +45,5 @@ docker login                          --- >> this willhelp in loggin in to the d
 
 docker image push <image-name>:tag        ---- >> this will push the image to docker hub repository
 
+docker system prune                       -------- >> delete every container and free up space on docker hosts
+
