@@ -28,6 +28,8 @@ docker start <container-id>                         --- >> start a container tha
 
 docker ps -f "status=exited"                        --- >> list exited containers
 
+docker run -it busybox sh                           ---- >> run a new container and give shell prompt
+
 docker run -d -p 8080:80 --name httpd2 httpd:latest   --- >> 8080 is host port and 80 is container port
 
 docker exec -it <nameofcontainer> bash                ---- >> this will connect to a running container
