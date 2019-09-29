@@ -53,3 +53,5 @@ docker system prune                       -------- >> delete every container and
 
 docker create busybox echo hi there     --------- >> this will only create the container and wont start it:(run = create+start)
 
+docker build -t name:tag Dockerfile 
+
