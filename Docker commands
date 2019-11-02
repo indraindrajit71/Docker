@@ -55,3 +55,7 @@ docker create busybox echo hi there     --------- >> this will only create the c
 
 docker build -t name:tag Dockerfile 
 
+
+docker run -p 3000:3000 -v /app/modules/node-modules -v /opt <image-id>
+
+
