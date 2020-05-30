@@ -51,6 +51,8 @@ docker image push <image-name>:tag        ---- >> this will push the image to do
 
 docker system prune                       -------- >> delete every container and free up space on docker hosts
 
+docker system prune -a                    ----------- >> deletes every container+images as well
+
 docker create busybox echo hi there     --------- >> this will only create the container and wont start it:(run = create+start)
 
 docker build -t name:tag Dockerfile 
